@@ -57,7 +57,7 @@ class Log {
     }
 }
 
-class Person() {
+class Person {
 
     private val phrases = mutableListOf<String>()
 
@@ -109,6 +109,11 @@ fun main() {
     val toggle = Toggle(true)
 
     println(!toggle)
+
+    val step1 = Step(1)
+    val step2 = Step(10)
+
+    println(9 in step1..step2)
 
     val price = Price(3)
 
