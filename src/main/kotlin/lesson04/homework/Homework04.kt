@@ -42,10 +42,10 @@ class Step(private val number: Int) {
     operator fun rangeTo(other: Step): IntRange {
         return number..other.number
     }
+}
 
-    operator fun IntRange.contains(step: Step): Boolean {
-        return step in this
-    }
+operator fun IntRange.contains(step: Step): Boolean {
+    return step in this
 }
 
 class Log {
@@ -112,8 +112,9 @@ fun main() {
 
     val step1 = Step(1)
     val step2 = Step(10)
+    val step3 = Step(10)
 
-    println(9 in step1..step2)
+    println(step3 in step1..step2)
 
     val price = Price(3)
 
