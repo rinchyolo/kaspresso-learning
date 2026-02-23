@@ -1,4 +1,4 @@
-package lesson06.homework
+package lesson07.homework
 
 import org.hamcrest.Description
 import org.hamcrest.TypeSafeDiagnosingMatcher
